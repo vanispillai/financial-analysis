@@ -11,29 +11,29 @@ df = df.drop_duplicates()
 df["Savings_Percentage"] = (df["Monthly_Savings"] / df["Total_Household_Income"] * 100)
 
 # Average Income by Country
-'''country_income = df.groupby("Country")["Total_Household_Income"].mean()
+country_income = df.groupby("Country")["Total_Household_Income"].mean()
 # Visualization
 country_income.plot(kind="bar")
 plt.title("Average Income by Country")
 plt.xlabel("Country")
 plt.ylabel("Income")
-plt.show()'''
+plt.show()
 #Average Expense by Country
-'''Country_expense=df.groupby('Country')["Monthly_Expenses"].mean()
+Country_expense=df.groupby('Country')["Monthly_Expenses"].mean()
 Country_expense.plot(kind="bar")
 plt.title("Average expenses by Country")
 plt.xlabel("Country")
 plt.ylabel("expense")
-plt.show()'''
+plt.show()
 #Average savings by Country
-'''Country_savings=df.groupby('Country')['Monthly_Savings'].mean()
+Country_savings=df.groupby('Country')['Monthly_Savings'].mean()
 Country_savings.plot(kind="bar")
-plt.title("Average expenses by Country")
+plt.title("Average savings by Country")
 plt.xlabel("Country")
 plt.ylabel("savings")
-plt.show()'''
+plt.show()
 
-'''#Average Savings by City
+#Average Savings by City
 city_savings = df.groupby("City")["Monthly_Savings"].mean()
 print(city_savings)
 #Top Performing Cities
@@ -50,7 +50,7 @@ print(tax_analysis)
 #Savings Distribution Analysis
 savings_distribution = df.groupby("Country")["Monthly_Savings"].mean()
 print(savings_distribution)
-'''
+
 
 #Automate Monthly Report Generation and Export to Excel
 import pandas as pd
